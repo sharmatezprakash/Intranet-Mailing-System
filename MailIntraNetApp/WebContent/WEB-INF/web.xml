@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="MailIntraNetApp" version="3.1">
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.cdac.controller.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.cdac.controller.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Compose</servlet-name>
+    <servlet-class>com.cdac.controller.Compose</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMails</servlet-name>
+    <servlet-class>com.cdac.controller.GetMails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetMails</servlet-name>
+    <url-pattern>/GetMails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Compose</servlet-name>
+    <url-pattern>/Compose</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
